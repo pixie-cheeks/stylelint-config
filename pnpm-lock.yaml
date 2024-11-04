@@ -19,8 +19,8 @@ importers:
         version: 36.0.1(stylelint@16.10.0(typescript@5.6.3))
     devDependencies:
       '@pixie-cheeks/eslint-config':
-        specifier: ^2.1.1
-        version: 2.1.1(eslint@9.14.0)(typescript@5.6.3)
+        specifier: ^2.4.1
+        version: 2.4.1(eslint@9.14.0)(typescript@5.6.3)
       eslint:
         specifier: ^9.14.0
         version: 9.14.0
@@ -130,8 +130,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@pixie-cheeks/eslint-config@2.1.1':
-    resolution: {integrity: sha512-JcQ9sXKBDMSwg+sEnNMWa4HoFUYn4oQhzvteFBathLh5Ss7nABzhyFEmkMh5BMpqk4/zGZUHWqGa6OCWwWGD3Q==}
+  '@pixie-cheeks/eslint-config@2.4.1':
+    resolution: {integrity: sha512-3x64MTHW567EreosP0zQ43BCsdKeH/00rkXlML0pKUDWlTYhaxnI2jtZz7RN46I76Op4gP93l18juvANhLNtNA==}
     peerDependencies:
       eslint: ^9.14.0
 
@@ -373,6 +373,10 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
+
+  eslint-define-config@2.1.0:
+    resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
 
   eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
@@ -1160,13 +1164,14 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@pixie-cheeks/eslint-config@2.1.1(eslint@9.14.0)(typescript@5.6.3)':
+  '@pixie-cheeks/eslint-config@2.4.1(eslint@9.14.0)(typescript@5.6.3)':
     dependencies:
       '@eslint/js': 9.14.0
       '@stylistic/eslint-plugin': 2.10.1(eslint@9.14.0)(typescript@5.6.3)
       confusing-browser-globals: 1.0.11
       eslint: 9.14.0
       eslint-config-prettier: 9.1.0(eslint@9.14.0)
+      eslint-define-config: 2.1.0
       eslint-plugin-import-x: 4.4.0(eslint@9.14.0)(typescript@5.6.3)
       eslint-plugin-n: 17.12.0(eslint@9.14.0)
       eslint-plugin-regexp: 2.6.0(eslint@9.14.0)
@@ -1394,6 +1399,8 @@ snapshots:
   eslint-config-prettier@9.1.0(eslint@9.14.0):
     dependencies:
       eslint: 9.14.0
+
+  eslint-define-config@2.1.0: {}
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
