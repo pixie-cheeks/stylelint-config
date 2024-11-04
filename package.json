@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Personal stylelint config",
-  "main": "index.js",
   "scripts": {
     "test": "echo 'Error: no test specified' && exit 1"
   },
@@ -13,8 +12,12 @@
   ],
   "author": "pixie-cheeks",
   "license": "ISC",
+  "exports": {
+    ".": "./src/index.js",
+    "./base": "./src/base.js"
+  },
   "files": [
-    "index.js"
+    "src"
   ],
   "prettier": {
     "singleQuote": true
