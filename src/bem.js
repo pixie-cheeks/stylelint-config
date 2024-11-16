@@ -12,7 +12,6 @@ const classPattern = `^${blockName}(${elementName})?(${modifierName})?(${modifie
 
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['./base.js'],
   rules: {
     'selector-class-pattern': [
       classPattern,

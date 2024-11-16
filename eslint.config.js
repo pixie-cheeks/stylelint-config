@@ -1,3 +1,3 @@
-import configPixie from '@pixie-cheeks/eslint-config';
+import pixie from '@pixie-cheeks/eslint-config';
 
-export default [...configPixie];
+export default [...pixie.base, pixie.prettier];
