@@ -6,7 +6,6 @@ const classPattern = `^${blockName}(${elementName})?(${modifierName})?(${modifie
 
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-css-modules'],
   rules: {
     'selector-class-pattern': [
       classPattern,
@@ -15,6 +14,7 @@ export default {
         resolveNestedSelectors: true,
       },
     ],
+    'value-keyword-case': ['lower', { ignoreProperties: [/^composes$/] }],
     'selector-pseudo-class-no-unknown': [
       true,
       {
