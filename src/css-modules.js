@@ -1,8 +1,12 @@
-const blockName = `[a-z]+`;
-const elementName = `[A-Z][a-z]+`;
-const modifierName = `[A-Z][a-z]+`;
-const modifierValue = `[A-Z][a-z]+`;
-const classPattern = `^${blockName}(${elementName})?(${modifierName})?(${modifierValue})?$`;
+const camelCase = '[a-z]+([A-Z][a-z]+)*';
+const blockName = camelCase;
+const elementName = camelCase;
+const modifierName = camelCase;
+const modifierValue = camelCase;
+const separator = '_';
+const classPattern =
+  `^${blockName}(${separator}${elementName})?` +
+  `(${separator}${modifierName})?(${separator}${modifierValue})?$`;
 
 /** @type {import('stylelint').Config} */
 export default {
